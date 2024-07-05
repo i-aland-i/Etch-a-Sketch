@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 90px;
+    border: 2px solid red;
+}
+/* this is the square that the rows and the columns of the grid go into */
+.squares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+}
+/* To style the rows of the grid */
+.squares .row {
+    display: flex;
+}
+/* To style the cells within rows of the grid */
+.squares .row .cell {
+    background-color: black;
+    border: 0.5px solid red;
+    box-sizing: border-box;
+}
